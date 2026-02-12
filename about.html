@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Capital in Motion</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header>
+    <div class="site-title">Capital in Motion</div>
+    <div class="site-subtitle">Daily Market Structure Log</div>
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="latest.html">Latest Report</a>
+    <a href="archive.html">Archive</a>
+    <a href="about.html" class="active">About</a>
+  </nav>
+  <main>
+    <h1>About</h1>
+    <p>Capital in Motion is an automated market intelligence system that tracks daily sector ETF relative strength across 11 major U.S. equity sectors. The system collects data after market close on weekday evenings and generates structured analytical reports.</p>
+
+    <h2>What We Track</h2>
+    <p>The system monitors the following sector ETFs against the S&P 500 (SPY) benchmark:</p>
+    <ul>
+      <li>XLK - Technology</li>
+      <li>XLF - Financials</li>
+      <li>XLE - Energy</li>
+      <li>XLV - Health Care</li>
+      <li>XLY - Consumer Discretionary</li>
+      <li>XLP - Consumer Staples</li>
+      <li>XLI - Industrials</li>
+      <li>XLB - Materials</li>
+      <li>XLRE - Real Estate</li>
+      <li>XLU - Utilities</li>
+    </ul>
+
+    <h2>Classification Systems</h2>
+    <h3>Sector Rankings</h3>
+    <p>Sectors are ranked by 20-day and 5-day relative strength versus the S&P 500. This dual-timeframe approach distinguishes between structural trends and short-term momentum.</p>
+
+    <h3>Acceleration Labels</h3>
+    <p>Each sector receives one of four acceleration classifications based on the relationship between its 5-day and 20-day relative strength:</p>
+    <ul>
+      <li><strong>Accelerating Leadership</strong> - Positive RS20D and RS5D exceeds RS20D. Strengthening structural momentum.</li>
+      <li><strong>Decelerating but Strong</strong> - Positive RS20D but RS5D lags RS20D. Still leading but momentum fading.</li>
+      <li><strong>Short-Term Bounce</strong> - Negative RS20D but positive RS5D. Potential mean reversion, not structural leadership.</li>
+      <li><strong>Structural Weakness</strong> - Negative on both timeframes. Persistent underperformance.</li>
+    </ul>
+
+    <h3>Market Regime</h3>
+    <p>The system classifies the broad market into one of four regimes based on SPY's 20-day performance and the relative strength balance between defensive and cyclical sectors:</p>
+    <ul>
+      <li><strong>Risk-On</strong> - SPY rising, cyclical sectors leading</li>
+      <li><strong>Risk-Off</strong> - SPY falling, defensive sectors leading</li>
+      <li><strong>Defensive Rotation</strong> - SPY rising, but defensive sectors outperforming cyclicals</li>
+      <li><strong>Selective Rotation</strong> - SPY falling, but cyclical sectors outperforming defensives</li>
+    </ul>
+
+    <h3>Leadership Breadth</h3>
+    <p>Counts the number of sectors with positive 20-day relative strength:</p>
+    <ul>
+      <li><strong>Narrow Leadership</strong> - 0-2 sectors positive</li>
+      <li><strong>Moderate Participation</strong> - 3-5 sectors positive</li>
+      <li><strong>Broad Leadership</strong> - 6+ sectors positive</li>
+    </ul>
+
+    <h2>Methodology</h2>
+    <p>Reports are generated automatically using market close data. All relative strength calculations use percentage change over 5-day and 20-day windows, measured against SPY as the benchmark. Analysis is produced by AI and focuses exclusively on observable data patterns. No predictions, price targets, or investment recommendations are provided.</p>
+  </main>
+  <footer>
+    <p>Capital in Motion. Data sourced from market ETF performance. Generated automatically.</p>
+  </footer>
+</body>
+</html>
